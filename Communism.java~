@@ -1,0 +1,40 @@
+/**
+ * Auto Generated Java Class.
+ */
+import java.util.Random;
+public class Communism {
+  
+  
+  public static void main(String[] args) 
+  {
+    int[][] board = new int[6][7];
+    for(int i = 0; i <= board.length - 1; i++)
+    {
+      for(int j = 0; j <= board[i].length - 1; j++)
+      {
+        Random r = new Random();
+        int rInt = r.nextInt(2) + 1;
+        board[i][j] = rInt;
+      }
+    }
+    
+  }
+  public static int checkForWinner(int[][] board)
+  {
+  
+  }
+  public static void printBoard(int[][] board)
+  {
+    for(int i = 0; i <= board.length - 1; i++)
+    {
+      for(int j = 0; j <= board.length - 1; j++)
+      {
+        System.out.print(board[i][j]);
+      }
+      System.out.println();
+    }
+  }
+  
+  /* ADD YOUR CODE HERE */
+  
+}
